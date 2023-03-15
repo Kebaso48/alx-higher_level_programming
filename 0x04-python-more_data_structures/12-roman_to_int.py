@@ -20,7 +20,7 @@ def roman_to_int(roman_string):
         if roman_dicto.get(roman_string[i], 0) == 0:
                 return (0)
 
-        if ((i != len(roman_string) - 1) and
+        if (i != len(roman_string) - 1 and
                 roman_dicto[roman_string[i]] < roman_dicto[roman_string[i + 1]]):
             n += roman_dicto[roman_string[i]] * -1
 
