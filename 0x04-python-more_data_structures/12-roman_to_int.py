@@ -17,14 +17,14 @@ def roman_to_int(roman_string):
     n = 0
 
     for i in range(len(roman_string)):
-            if roman_dicto.get(roman_string[i], 0) == 0:
+        if roman_dicto.get(roman_string[i], 0) == 0:
                 return (0)
 
-            if ((i != len(roman_string) - 1) and
-                    roman_dicto[roman_string[i]] < roman_dicto[roman_string[i + 1]]):
-                n += roman_dicto[roman_string[i]] * -1
+        if ((i != len(roman_string) - 1) and
+                roman_dicto[roman_string[i]] < roman_dicto[roman_string[i + 1]]):
+            n += roman_dicto[roman_string[i]] * -1
 
-            else:
-                n += roman_dicto[roman_string[i]]
+        else:
+            n += roman_dicto[roman_string[i]]
 
     return (n)
