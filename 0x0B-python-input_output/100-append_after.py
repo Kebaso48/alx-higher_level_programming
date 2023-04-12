@@ -8,7 +8,7 @@ def append_after(filename="", search_string="", new_string=""):
     Args:
          filename (str): the file to append the string
          search_string (str): string to search for in the file
-         new_string (str): string to insert 
+         new_string (str): string to insert
     """
     txt = ""
     with open(filename) as r:
